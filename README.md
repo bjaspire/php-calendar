@@ -45,11 +45,11 @@ In its simplest form, use the following to create a calendar
 
 	$events = array();
 
-	$events[] = array('2017-01-14', '2017-01-14', 'My Birthday', true, 'myclass abc');
+	$events[] = array('start'=>'2018-08-14', 'end'=>'2018-08-14', 'summary'=>'My Birthday', 'mask' => true, 'classes' => 'myclass abc');
 
-	$events[] = array('2017-12-25', '2017-12-25', 'Christmas', true);
-
-	$calendar->addEvents($events);
+    	$events[] = array('start'=>'2018-08-17', 'end'=>'2018-08-17', 'summary'=>'Christmasy', 'mask' => true, 'classes' => 'myclass abc');
+        
+        $calendar->addEvents($events);	
 
 	# finally, to draw a calendar
 
